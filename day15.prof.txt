@@ -1,0 +1,20 @@
+advent2022 git/main  90s
+❯ python -m cProfile day15.py day15.txt
+7257164
+10621647166538
+         775044343 function calls (775044293 primitive calls) in 419.669 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      2/1    0.000    0.000  419.669  419.669 {built-in method builtins.exec}
+        1   11.370   11.370  419.669  419.669 day15.py:1(<module>)
+  4000000   51.320    0.000  308.862    0.000 day15.py:71(<listcomp>)
+120000030  124.585    0.000  257.542    0.000 day15.py:10(coverage)
+120000030   86.609    0.000  117.554    0.000 day15.py:6(manhattan)
+  8000002   37.953    0.000   57.490    0.000 {built-in method builtins.sorted}
+360000090   46.348    0.000   46.348    0.000 {built-in method builtins.abs}
+  4000001   27.855    0.000   39.528    0.000 day15.py:20(dedupe)
+120000000   19.537    0.000   19.537    0.000 day15.py:70(<lambda>)
+ 31042611    9.378    0.000    9.378    0.000 {built-in method builtins.max}
+  4000000    3.694    0.000    4.710    0.000 day15.py:33(find_gaps)
